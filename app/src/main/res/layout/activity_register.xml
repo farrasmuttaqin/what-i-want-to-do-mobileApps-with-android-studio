@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/logo2" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_fullname"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fullname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:ems="10"
+
+        android:drawableLeft="@drawable/ic_action_user"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="16dp" />
+
+    <EditText
+    android:id="@+id/passwords"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_below="@+id/username"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:background="@null"
+    android:ems="10"
+
+    android:drawableLeft="@drawable/ic_action_pass"
+    android:drawablePadding="10dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/passwords2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/passwords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:ems="10"
+
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:drawablePadding="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:layout_below="@id/passwords2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loading"
+        android:layout_centerHorizontal="true"
+        android:background="#004d66"
+        android:layout_marginTop="25dp"
+        android:text="Register"
+        android:textColor="#fff">
+
+    </Button>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        android:text="Already have an account? Login now"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>

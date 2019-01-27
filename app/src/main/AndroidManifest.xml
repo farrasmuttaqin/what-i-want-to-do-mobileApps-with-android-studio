@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.todolist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/large"
+        android:label="What i want to do?"
+        android:roundIcon="@drawable/large"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".NotificationDisplayService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".Splash" />
+        <activity android:name=".ChangeName"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".EditTask"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".SelectTask" />
+        <activity
+            android:name=".FinishedTask"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".SelectTask"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".AddTask"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".Home" />
+        <activity android:name=".Home"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".Register" />
+    </application>
+
+</manifest>

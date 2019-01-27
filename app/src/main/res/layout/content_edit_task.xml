@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EditTask"
+    tools:showIn="@layout/activity_edit_task">
+
+    <TextView
+        android:id="@+id/titleE"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to ?"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/dateE"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextE"
+        android:text="Due date"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/timeE"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTextE"
+        android:text="Due time"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+
+    <ProgressBar
+        android:id="@+id/loadingEdit"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:layout_below="@id/timeTextE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/editE"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadingEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient"
+        android:textColor="#663d00"
+        android:text="Edit"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/titleTextE"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/titleE"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/dateTextE"
+        android:layout_width="220dp"
+        android:textColor="#333333"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/dateE"
+        android:clickable="true"
+        android:hint="day, date month year"
+        android:textSize="16dp"
+        android:editable="false"
+        android:focusable="false"
+        android:inputType="date"
+
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:textSize="16dp"
+        android:id="@+id/timeTextE"
+        android:editable="false"
+        android:textColor="#333333"
+        android:focusable="false"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="hours:minutes"
+        android:layout_below="@+id/timeE"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

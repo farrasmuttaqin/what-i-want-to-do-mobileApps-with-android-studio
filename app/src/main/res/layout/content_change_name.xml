@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddTask"
+    tools:showIn="@layout/activity_change_name">
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your name is"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/changeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTitle"
+        android:textColor="#000000"
+        android:text="Change to"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/changeMyName"
+        android:textColor="#333333"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/changeName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+
+    <ProgressBar
+        android:id="@+id/loadingAdd222"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:layout_below="@id/changeMyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/changeNameNow"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textColor="#004d1a"
+
+        android:text="Change my name"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loadingAdd222"
+        android:background="@drawable/gradient"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" />
+
+
+
+
+
+</RelativeLayout>
