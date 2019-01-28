@@ -1,4 +1,4 @@
-# What i want to do? - an simple apps to start your day
+# What i want to do? - an simple app to start your day
 
 ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)
 ![GitHub forks](https://img.shields.io/github/forks/farrasmuttaqin/what-i-want-to-do-mobileApps-with-android-studio.svg)
