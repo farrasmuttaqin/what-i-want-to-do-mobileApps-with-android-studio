@@ -22,4 +22,4 @@ License
 MIT
 
 
-**Thanks to "Mochammad Gatot Subroto" for participation in create this app**
+**Thanks to "Mochammad Gatot Subroto" for participating in create logo and develop this app**
