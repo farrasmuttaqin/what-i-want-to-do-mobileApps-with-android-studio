@@ -13,7 +13,7 @@ Simple to do list app using volley library.
 
 Volley is a framework project of Android.
 Ficus Kirkpatrick, Googler, made a presentation at Google IO 2013.
-See it on [YouTube][2]
+See it on Youtube : http://www.youtube.com/watch?v=yhv8l9F44qo
 
 ### Installation
 
@@ -29,4 +29,3 @@ MIT
 
 
 **Thanks to "Mochammad Gatot Subroto" for participating in create logo and develop this app**
-[2]: http://www.youtube.com/watch?v=yhv8l9F44qo
