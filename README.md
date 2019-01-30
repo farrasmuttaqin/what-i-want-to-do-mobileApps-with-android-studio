@@ -7,7 +7,13 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/farrasmuttaqin/what-i-want-to-do-mobileApps-with-android-studio.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/farrasmuttaqin/what-i-want-to-do-mobileApps-with-android-studio.svg)
 
-Simple to do list apps with java programming.
+Simple to do list app using volley library.
+
+### What's Volley
+
+Volley is a framework project of Android.
+Ficus Kirkpatrick, Googler, made a presentation at Google IO 2013.
+See it on [YouTube][2]
 
 ### Installation
 
@@ -23,3 +29,4 @@ MIT
 
 
 **Thanks to "Mochammad Gatot Subroto" for participating in create logo and develop this app**
+[2]: http://www.youtube.com/watch?v=yhv8l9F44qo
